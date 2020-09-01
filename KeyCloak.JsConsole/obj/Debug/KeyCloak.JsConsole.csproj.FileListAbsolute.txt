@@ -1,0 +1,1 @@
+C:\Development\KeyCloak\KeyCloak.JsConsole\obj\Debug\KeyCloak.JsConsole.csprojAssemblyReference.cache

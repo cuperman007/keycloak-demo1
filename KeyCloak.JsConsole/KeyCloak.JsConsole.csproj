@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C07A56F-D4AA-4565-906C-B3F95FC4A7EE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>KeyCloak.JsConsole</RootNamespace>
+    <AssemblyName>KeyCloak.JsConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Dockerfile" />
+    <None Include="src\keycloak.json" />
+    <None Include="src\patternfly\css\patternfly-additions.css.map" />
+    <None Include="src\patternfly\css\patternfly-additions.min.css.map" />
+    <None Include="src\patternfly\css\patternfly.css.map" />
+    <None Include="src\patternfly\css\patternfly.min.css.map" />
+    <None Include="src\patternfly\fonts\fontawesome-webfont.eot" />
+    <None Include="src\patternfly\fonts\fontawesome-webfont.ttf" />
+    <None Include="src\patternfly\fonts\fontawesome-webfont.woff" />
+    <None Include="src\patternfly\fonts\fontawesome-webfont.woff2" />
+    <None Include="src\patternfly\fonts\FontAwesome.otf" />
+    <None Include="src\patternfly\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="src\patternfly\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="src\patternfly\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="src\patternfly\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="src\patternfly\fonts\OpenSans-Bold-webfont.eot" />
+    <None Include="src\patternfly\fonts\OpenSans-Bold-webfont.ttf" />
+    <None Include="src\patternfly\fonts\OpenSans-Bold-webfont.woff" />
+    <None Include="src\patternfly\fonts\OpenSans-Bold-webfont.woff2" />
+    <None Include="src\patternfly\fonts\OpenSans-BoldItalic-webfont.eot" />
+    <None Include="src\patternfly\fonts\OpenSans-BoldItalic-webfont.ttf" />
+    <None Include="src\patternfly\fonts\OpenSans-BoldItalic-webfont.woff" />
+    <None Include="src\patternfly\fonts\OpenSans-BoldItalic-webfont.woff2" />
+    <None Include="src\patternfly\fonts\OpenSans-ExtraBold-webfont.eot" />
+    <None Include="src\patternfly\fonts\OpenSans-ExtraBold-webfont.ttf" />
+    <None Include="src\patternfly\fonts\OpenSans-ExtraBold-webfont.woff" />
+    <None Include="src\patternfly\fonts\OpenSans-ExtraBold-webfont.woff2" />
+    <None Include="src\patternfly\fonts\OpenSans-ExtraBoldItalic-webfont.eot" />
+    <None Include="src\patternfly\fonts\OpenSans-ExtraBoldItalic-webfont.ttf" />
+    <None Include="src\patternfly\fonts\OpenSans-ExtraBoldItalic-webfont.woff" />
+    <None Include="src\patternfly\fonts\OpenSans-ExtraBoldItalic-webfont.woff2" />
+    <None Include="src\patternfly\fonts\OpenSans-Italic-webfont.eot" />
+    <None Include="src\patternfly\fonts\OpenSans-Italic-webfont.ttf" />
+    <None Include="src\patternfly\fonts\OpenSans-Italic-webfont.woff" />
+    <None Include="src\patternfly\fonts\OpenSans-Italic-webfont.woff2" />
+    <None Include="src\patternfly\fonts\OpenSans-Light-webfont.eot" />
+    <None Include="src\patternfly\fonts\OpenSans-Light-webfont.ttf" />
+    <None Include="src\patternfly\fonts\OpenSans-Light-webfont.woff" />
+    <None Include="src\patternfly\fonts\OpenSans-Light-webfont.woff2" />
+    <None Include="src\patternfly\fonts\OpenSans-LightItalic-webfont.eot" />
+    <None Include="src\patternfly\fonts\OpenSans-LightItalic-webfont.ttf" />
+    <None Include="src\patternfly\fonts\OpenSans-LightItalic-webfont.woff" />
+    <None Include="src\patternfly\fonts\OpenSans-LightItalic-webfont.woff2" />
+    <None Include="src\patternfly\fonts\OpenSans-Regular-webfont.eot" />
+    <None Include="src\patternfly\fonts\OpenSans-Regular-webfont.ttf" />
+    <None Include="src\patternfly\fonts\OpenSans-Regular-webfont.woff" />
+    <None Include="src\patternfly\fonts\OpenSans-Regular-webfont.woff2" />
+    <None Include="src\patternfly\fonts\OpenSans-Semibold-webfont.eot" />
+    <None Include="src\patternfly\fonts\OpenSans-Semibold-webfont.ttf" />
+    <None Include="src\patternfly\fonts\OpenSans-Semibold-webfont.woff" />
+    <None Include="src\patternfly\fonts\OpenSans-Semibold-webfont.woff2" />
+    <None Include="src\patternfly\fonts\OpenSans-SemiboldItalic-webfont.eot" />
+    <None Include="src\patternfly\fonts\OpenSans-SemiboldItalic-webfont.ttf" />
+    <None Include="src\patternfly\fonts\OpenSans-SemiboldItalic-webfont.woff" />
+    <None Include="src\patternfly\fonts\OpenSans-SemiboldItalic-webfont.woff2" />
+    <None Include="src\patternfly\fonts\PatternFlyIcons-webfont.eot" />
+    <None Include="src\patternfly\fonts\PatternFlyIcons-webfont.ttf" />
+    <None Include="src\patternfly\fonts\PatternFlyIcons-webfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\index.html" />
+    <Content Include="src\patternfly\css\patternfly-additions.css" />
+    <Content Include="src\patternfly\css\patternfly-additions.min.css" />
+    <Content Include="src\patternfly\css\patternfly.css" />
+    <Content Include="src\patternfly\css\patternfly.min.css" />
+    <Content Include="src\patternfly\fonts\fontawesome-webfont.svg" />
+    <Content Include="src\patternfly\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="src\patternfly\fonts\OpenSans-Bold-webfont.svg" />
+    <Content Include="src\patternfly\fonts\OpenSans-BoldItalic-webfont.svg" />
+    <Content Include="src\patternfly\fonts\OpenSans-ExtraBold-webfont.svg" />
+    <Content Include="src\patternfly\fonts\OpenSans-ExtraBoldItalic-webfont.svg" />
+    <Content Include="src\patternfly\fonts\OpenSans-Italic-webfont.svg" />
+    <Content Include="src\patternfly\fonts\OpenSans-Light-webfont.svg" />
+    <Content Include="src\patternfly\fonts\OpenSans-LightItalic-webfont.svg" />
+    <Content Include="src\patternfly\fonts\OpenSans-Regular-webfont.svg" />
+    <Content Include="src\patternfly\fonts\OpenSans-Semibold-webfont.svg" />
+    <Content Include="src\patternfly\fonts\OpenSans-SemiboldItalic-webfont.svg" />
+    <Content Include="src\patternfly\fonts\PatternFlyIcons-webfont.svg" />
+    <Content Include="src\patternfly\img\apple-touch-icon-precomposed-114.png" />
+    <Content Include="src\patternfly\img\apple-touch-icon-precomposed-144.png" />
+    <Content Include="src\patternfly\img\apple-touch-icon-precomposed-152.png" />
+    <Content Include="src\patternfly\img\apple-touch-icon-precomposed-180.png" />
+    <Content Include="src\patternfly\img\apple-touch-icon-precomposed-57.png" />
+    <Content Include="src\patternfly\img\apple-touch-icon-precomposed-72.png" />
+    <Content Include="src\patternfly\img\apple-touch-icon-precomposed-76.png" />
+    <Content Include="src\patternfly\img\bg-login-2.png" />
+    <Content Include="src\patternfly\img\bg-login.jpg" />
+    <Content Include="src\patternfly\img\bg-login.png" />
+    <Content Include="src\patternfly\img\bg-modal-about-pf.png" />
+    <Content Include="src\patternfly\img\bg-navbar-pf-alt.svg" />
+    <Content Include="src\patternfly\img\brand-alt.svg" />
+    <Content Include="src\patternfly\img\brand.svg" />
+    <Content Include="src\patternfly\img\dropbox-logo.svg" />
+    <Content Include="src\patternfly\img\facebook-logo.svg" />
+    <Content Include="src\patternfly\img\favicon.ico" />
+    <Content Include="src\patternfly\img\fedora-logo.png" />
+    <Content Include="src\patternfly\img\git-logo.svg" />
+    <Content Include="src\patternfly\img\github-logo.svg" />
+    <Content Include="src\patternfly\img\gmail.svg" />
+    <Content Include="src\patternfly\img\google-calendar.svg" />
+    <Content Include="src\patternfly\img\google-drive.svg" />
+    <Content Include="src\patternfly\img\google-logo.svg" />
+    <Content Include="src\patternfly\img\instagram-logo.png" />
+    <Content Include="src\patternfly\img\kubernetes-Logo.svg" />
+    <Content Include="src\patternfly\img\kubernetes.svg" />
+    <Content Include="src\patternfly\img\linkedin-logo.svg" />
+    <Content Include="src\patternfly\img\logo-alt.svg" />
+    <Content Include="src\patternfly\img\logo.svg" />
+    <Content Include="src\patternfly\img\Logo_Horizontal_Reversed.svg" />
+    <Content Include="src\patternfly\img\open-id-logo.svg" />
+    <Content Include="src\patternfly\img\OpenShift-Logo-NoText.svg" />
+    <Content Include="src\patternfly\img\OpenShift-Logo-Text.svg" />
+    <Content Include="src\patternfly\img\OpenShift-logo.svg" />
+    <Content Include="src\patternfly\img\rcue-full.svg" />
+    <Content Include="src\patternfly\img\rcue.svg" />
+    <Content Include="src\patternfly\img\redhat_reverse.png" />
+    <Content Include="src\patternfly\img\RH_Atomic-Logo-NoText.svg" />
+    <Content Include="src\patternfly\img\RH_Atomic-Logo-Text.svg" />
+    <Content Include="src\patternfly\img\RH_atomic.svg" />
+    <Content Include="src\patternfly\img\skype-logo.svg" />
+    <Content Include="src\patternfly\img\spinner-inverse-lg.gif" />
+    <Content Include="src\patternfly\img\spinner-inverse-sm.gif" />
+    <Content Include="src\patternfly\img\spinner-inverse-xs.gif" />
+    <Content Include="src\patternfly\img\spinner-inverse.gif" />
+    <Content Include="src\patternfly\img\spinner-lg.gif" />
+    <Content Include="src\patternfly\img\spinner-sm.gif" />
+    <Content Include="src\patternfly\img\spinner-xs.gif" />
+    <Content Include="src\patternfly\img\spinner.gif" />
+    <Content Include="src\patternfly\img\stack-exchange-logo.svg" />
+    <Content Include="src\patternfly\img\twitter-logo.svg" />
+    <Content Include="src\patternfly\js\patternfly-functions-base.js" />
+    <Content Include="src\patternfly\js\patternfly-functions-charts.js" />
+    <Content Include="src\patternfly\js\patternfly-functions-colors.js" />
+    <Content Include="src\patternfly\js\patternfly-functions-count-chars.js" />
+    <Content Include="src\patternfly\js\patternfly-functions-data-tables.js" />
+    <Content Include="src\patternfly\js\patternfly-functions-fixed-heights.js" />
+    <Content Include="src\patternfly\js\patternfly-functions-list.js" />
+    <Content Include="src\patternfly\js\patternfly-functions-navigation.js" />
+    <Content Include="src\patternfly\js\patternfly-functions-popovers.js" />
+    <Content Include="src\patternfly\js\patternfly-functions-sidebar.js" />
+    <Content Include="src\patternfly\js\patternfly-functions-tree-grid.js" />
+    <Content Include="src\patternfly\js\patternfly-functions-vertical-nav.js" />
+    <Content Include="src\patternfly\js\patternfly-functions.js" />
+    <Content Include="src\patternfly\js\patternfly-functions.min.js" />
+    <Content Include="src\patternfly\js\patternfly-settings-base.js" />
+    <Content Include="src\patternfly\js\patternfly-settings-charts.js" />
+    <Content Include="src\patternfly\js\patternfly-settings-colors.js" />
+    <Content Include="src\patternfly\js\patternfly-settings.js" />
+    <Content Include="src\patternfly\js\patternfly-settings.min.js" />
+    <Content Include="src\patternfly\js\patternfly.dataTables.pfColVis.js" />
+    <Content Include="src\patternfly\js\patternfly.dataTables.pfEmpty.js" />
+    <Content Include="src\patternfly\js\patternfly.dataTables.pfEmpty.min.js" />
+    <Content Include="src\patternfly\js\patternfly.dataTables.pfFilter.js" />
+    <Content Include="src\patternfly\js\patternfly.dataTables.pfFilter.min.js" />
+    <Content Include="src\patternfly\js\patternfly.dataTables.pfPagination.js" />
+    <Content Include="src\patternfly\js\patternfly.dataTables.pfPagination.min.js" />
+    <Content Include="src\patternfly\js\patternfly.dataTables.pfResize.js" />
+    <Content Include="src\patternfly\js\patternfly.dataTables.pfResize.min.js" />
+    <Content Include="src\patternfly\js\patternfly.dataTables.pfSelect.js" />
+    <Content Include="src\patternfly\js\patternfly.dataTables.pfSelect.min.js" />
+    <Content Include="src\patternfly\js\patternfly.js" />
+    <Content Include="src\patternfly\js\patternfly.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\patternfly\js\patternfly-settings-base.d.ts" />
+    <TypeScriptCompile Include="src\patternfly\js\patternfly-settings-charts.d.ts" />
+    <TypeScriptCompile Include="src\patternfly\js\patternfly-settings-colors.d.ts" />
+    <TypeScriptCompile Include="src\patternfly\js\patternfly-settings.d.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

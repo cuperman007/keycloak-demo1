@@ -38,7 +38,6 @@ C:\Development\KeyCloak\KeyCloak.Mvc\bin\Debug\netcoreapp3.1\KeyCloak.Mvc.pdb
 C:\Development\KeyCloak\KeyCloak.Mvc\bin\Debug\netcoreapp3.1\KeyCloak.Mvc.Views.dll
 C:\Development\KeyCloak\KeyCloak.Mvc\bin\Debug\netcoreapp3.1\KeyCloak.Mvc.Views.pdb
 C:\Development\KeyCloak\KeyCloak.Mvc\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Development\KeyCloak\KeyCloak.Mvc\obj\Debug\netcoreapp3.1\KeyCloak.Mvc.MvcApplicationPartsAssemblyInfo.cache
 C:\Development\KeyCloak\KeyCloak.Mvc\obj\Debug\netcoreapp3.1\KeyCloak.Mvc.Views.pdb
 C:\Development\KeyCloak\KeyCloak.Mvc\obj\Debug\netcoreapp3.1\KeyCloak.Mvc.dll
 C:\Development\KeyCloak\KeyCloak.Mvc\obj\Debug\netcoreapp3.1\KeyCloak.Mvc.pdb
